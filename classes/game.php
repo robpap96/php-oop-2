@@ -1,14 +1,16 @@
 <?php
 
-require_once __DIR__ . "/product.php";
+require_once __DIR__ . "/Product.php";
+require_once __DIR__ . "/Category.php";
+
 
 class Game extends Product {
     public $material;
 
 
-    function __costruct(string $name, int $id, float $price, string $category, float $material) {
-        parent::__construct($name, $id, $price, $category);
-        $this->material = $material;
+    public function __costruct(string $_name, int $_id, float $_price, Category $_category, string $_material) {
+        parent::__construct($_name, $_id, $_price, $_category);
+        $this->material = $_material;
 
     }
 };

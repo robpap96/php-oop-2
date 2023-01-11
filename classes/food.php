@@ -1,15 +1,17 @@
 <?php
 
-require_once __DIR__ . "/product.php";
+require_once __DIR__ . "/Product.php";
+require_once __DIR__ . "/Category.php";
+
 
 class Food extends Product {
     public $meat;
     public $typeofmeal;
 
-    function __construct(string $name, int $id, float $price, string $category, string $meat, string $typeofmeal) {
-        parent::__construct($name, $id, $price, $category);
-        $this->meat = $meat;
-        $this->typeofmeal = $typeofmeal;
+    public function __construct(string $_name, int $_id, float $_price, Category $_category, string $_meat, string $_typeofmeal) {
+        parent::__construct($_name, $_id, $_price, $_category);
+        $this->meat = $_meat;
+        $this->typeofmeal = $_typeofmeal;
 
     }
 };
