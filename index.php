@@ -33,8 +33,6 @@ require_once __DIR__ . "/products_db/db.php";
                                 </div>
                                 <h4 class="card-title"><?php echo $product->price; ?> €</h4>
 
-
-
                                 <a href="#" class="btn btn-primary">Aggiungi al carrello</a>
                             </div>
                         </div>
